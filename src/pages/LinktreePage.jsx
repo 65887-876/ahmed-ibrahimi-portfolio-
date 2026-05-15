@@ -112,6 +112,14 @@ export default function LinktreePage() {
           </div>
 
           <p className="mt-6 text-center text-xs text-zinc-500">© {new Date().getFullYear()} Ahmed Ibrahimi Photography</p>
+          <a
+            href="https://www.instagram.com/yourfavtechnerd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 block text-center text-xs text-zinc-500 transition hover:text-zinc-300"
+          >
+            Developed by @yourfavtechnerd
+          </a>
         </div>
       </div>
     </section>
