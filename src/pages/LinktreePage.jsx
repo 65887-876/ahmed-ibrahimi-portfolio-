@@ -37,17 +37,20 @@ const links = [
 
 export default function LinktreePage() {
   return (
-    <section id="contact" className="relative isolate min-h-[calc(100vh-56px)] overflow-hidden py-10 sm:py-14">
+    <section id="contact" className="relative isolate min-h-[calc(100vh-56px)] py-6 sm:py-14">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-b from-brand/16 via-transparent to-sea/10" />
       <div className="mx-auto w-full max-w-xl px-4 sm:px-6">
-        <div className="rounded-3xl border border-zinc-800/80 bg-zinc-900/55 p-5 shadow-2xl shadow-black/30 backdrop-blur-md sm:p-7">
+        <div className="rounded-3xl border border-zinc-800/80 bg-zinc-900/55 p-4 shadow-2xl shadow-black/30 backdrop-blur-md sm:p-7">
           <div className="text-center">
-            <img
-              src="/assets/gallery/thumbs/IMG_3043.webp"
-              alt="Ahmed Ibrahimi profile"
-              className="mx-auto h-24 w-24 rounded-full border border-zinc-700/80 object-cover shadow-lg shadow-black/30"
-              loading="eager"
-            />
+            <picture>
+              <source srcSet="/assets/gallery/thumbs/IMG_3043.webp" type="image/webp" />
+              <img
+                src="/assets/gallery/IMG_3043.JPG"
+                alt="Ahmed Ibrahimi profile"
+                className="mx-auto h-24 w-24 rounded-full border border-zinc-700/80 object-cover shadow-lg shadow-black/30"
+                loading="eager"
+              />
+            </picture>
             <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Official linktree</p>
             <h1 className="font-display mt-2 text-3xl text-zinc-50 sm:text-4xl">Ahmed Ibrahimi</h1>
             <p className="mt-1 text-sm text-zinc-400">Photographer</p>
@@ -111,12 +114,12 @@ export default function LinktreePage() {
             })}
           </div>
 
-          <p className="mt-6 text-center text-xs text-zinc-500">© {new Date().getFullYear()} Ahmed Ibrahimi Photography</p>
+          <p className="mt-5 text-center text-xs text-zinc-500">© {new Date().getFullYear()} Ahmed Ibrahimi Photography</p>
           <a
             href="https://www.instagram.com/yourfavtechnerd"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-1 block text-center text-xs text-zinc-500 transition hover:text-zinc-300"
+            className="mt-1 block text-center text-xs text-zinc-400 transition hover:text-zinc-300"
           >
             Developed by @yourfavtechnerd
           </a>
