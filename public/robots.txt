@@ -1,0 +1,11 @@
+# https://hamzaboukhari.site — sync domain with src/constants/portfolio.js SITE_URL
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://hamzaboukhari.site/sitemap.xml

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="45%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="900" fill="url(#g)"/>
+  <rect width="1440" height="900" fill="url(#grid)"/>
+  <text x="72" y="780" font-family="Georgia,serif" font-size="52" fill="#ecfdf5" opacity="0.95">Padel Kiwi</text>
+  <text x="72" y="835" font-family="system-ui,sans-serif" font-size="22" fill="#bbf7d0" opacity="0.85">Preview loading&</text>
+</svg>

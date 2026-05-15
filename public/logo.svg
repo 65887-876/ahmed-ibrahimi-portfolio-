@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+  <defs>
+    <linearGradient id="hb-underline" x1="18" y1="0" x2="54" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1aabaf" />
+      <stop offset="1" stop-color="#dc2f3e" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="68" height="68" rx="18" fill="#0c0c0f" stroke="#3f3f46" stroke-width="1" />
+  <circle cx="56" cy="17" r="3" fill="#1aabaf" />
+  <g stroke="#f4f4f5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 19v34" />
+    <path d="M15 36h13" />
+    <path d="M28 19v34" />
+    <path d="M31 23H40Q49 23 49 30Q49 37 40 37H31" />
+    <path d="M31 40H41Q50 40 50 47Q50 54 41 54H31" />
+  </g>
+  <rect x="17" y="56.5" width="38" height="2.5" rx="1.25" fill="url(#hb-underline)" opacity="0.9" />
+</svg>
