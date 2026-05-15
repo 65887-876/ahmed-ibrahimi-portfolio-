@@ -8,7 +8,8 @@
     "dev:network": "vite --host 0.0.0.0",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "optimize:gallery": "node scripts/optimize-gallery.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -30,6 +31,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "vite": "^7.3.1"
   }

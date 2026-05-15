@@ -43,7 +43,7 @@ export default function LinktreePage() {
         <div className="rounded-3xl border border-zinc-800/80 bg-zinc-900/55 p-5 shadow-2xl shadow-black/30 backdrop-blur-md sm:p-7">
           <div className="text-center">
             <img
-              src="/assets/gallery/IMG_3043.JPG"
+              src="/assets/gallery/thumbs/IMG_3043.webp"
               alt="Ahmed Ibrahimi profile"
               className="mx-auto h-24 w-24 rounded-full border border-zinc-700/80 object-cover shadow-lg shadow-black/30"
               loading="eager"

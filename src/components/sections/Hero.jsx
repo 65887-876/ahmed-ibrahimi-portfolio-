@@ -10,7 +10,7 @@ export default function Hero() {
         <figure className="order-1 w-full shrink-0 lg:order-2 lg:flex lg:w-auto lg:justify-end">
           <div className="mx-auto w-full max-w-56 overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/40 shadow-lg shadow-black/30 ring-1 ring-inset ring-white/6 md:max-w-60 lg:mx-0 lg:max-w-[16rem]">
             <img
-              src="/assets/gallery/IMG_3043.JPG"
+              src="/assets/gallery/optimized/IMG_3043.webp"
               alt="Ahmed Ibrahimi photographer portrait sample"
               className="aspect-4/5 w-full object-cover object-right"
               loading="eager"

@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="order-1 mx-auto w-full max-w-sm lg:order-2 lg:max-w-md">
             <div className="relative overflow-hidden rounded-3xl border border-zinc-700/60 bg-zinc-900/55 p-2 shadow-2xl shadow-black/35">
               <img
-                src="/assets/gallery/IMG_3043.JPG"
+                src="/assets/gallery/optimized/IMG_3043.webp"
                 alt="Ahmed Ibrahimi portrait"
                 className="h-[330px] w-full rounded-2xl object-cover sm:h-[500px]"
                 loading="eager"
@@ -25,7 +25,7 @@ export default function HomePage() {
               </div>
             </div>
             <img
-              src="/assets/gallery/IMG_3051.JPG"
+              src="/assets/gallery/optimized/IMG_3051.webp"
               alt="Ahmed Ibrahimi creative sample"
               className="relative -mt-10 ml-auto hidden h-40 w-36 rounded-2xl border border-zinc-700/70 object-cover shadow-xl shadow-black/40 sm:block"
               loading="lazy"

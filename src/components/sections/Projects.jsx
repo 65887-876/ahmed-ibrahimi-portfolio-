@@ -39,6 +39,8 @@ export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(-1)
 
   const getImgPath = (name) => `/assets/gallery/${name}`
+  const getOptimizedPath = (name) => `/assets/gallery/optimized/${name.replace(/\.[^.]+$/, '')}.webp`
+  const getThumbPath = (name) => `/assets/gallery/thumbs/${name.replace(/\.[^.]+$/, '')}.webp`
   const categories = useMemo(() => ['All', 'Portrait', 'Lifestyle', 'Event', 'Street'], [])
 
   const filteredItems = useMemo(() => {
@@ -120,13 +122,16 @@ export default function Projects() {
                 className="group relative block w-full overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40 text-left shadow-xl shadow-black/30 ring-1 ring-white/5 transition hover:-translate-y-0.5 hover:border-sea/45"
               >
                 <div className="relative overflow-hidden">
-                  <img
-                    src={getImgPath(item.fileName)}
-                    alt={`Ahmed Ibrahimi ${item.category.toLowerCase()} photography`}
-                    className="w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <picture>
+                    <source srcSet={getThumbPath(item.fileName)} type="image/webp" />
+                    <img
+                      src={getImgPath(item.fileName)}
+                      alt={`Ahmed Ibrahimi ${item.category.toLowerCase()} photography`}
+                      className="w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                   <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-950/5 to-transparent opacity-90" />
                   <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-4 py-3">
                     <span className="rounded-full border border-zinc-500/30 bg-zinc-950/70 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-zinc-200">
@@ -161,13 +166,16 @@ export default function Projects() {
             </button>
 
             <div className="relative flex h-full w-full items-center justify-center px-3 pb-24 pt-16 sm:px-16 sm:pb-16 sm:pt-16">
-              <img
-                src={getImgPath(activeItem.fileName)}
-                alt="Expanded gallery photo"
-                className="max-h-full w-full max-w-5xl rounded-xl border border-zinc-700/60 bg-zinc-900/75 object-contain shadow-2xl shadow-black/55"
-                loading="eager"
-                decoding="async"
-              />
+              <picture>
+                <source srcSet={getOptimizedPath(activeItem.fileName)} type="image/webp" />
+                <img
+                  src={getImgPath(activeItem.fileName)}
+                  alt="Expanded gallery photo"
+                  className="max-h-full w-full max-w-5xl rounded-xl border border-zinc-700/60 bg-zinc-900/75 object-contain shadow-2xl shadow-black/55"
+                  loading="eager"
+                  decoding="async"
+                />
+              </picture>
             </div>
 
             <div className="absolute inset-x-0 bottom-0 z-10 border-t border-zinc-700/60 bg-zinc-950/88 px-4 py-4 backdrop-blur sm:inset-x-auto sm:bottom-6 sm:left-1/2 sm:w-auto sm:-translate-x-1/2 sm:rounded-full sm:border sm:px-5 sm:py-2.5">
