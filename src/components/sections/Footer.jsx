@@ -38,14 +38,26 @@ export default function Footer() {
         <span className="max-w-lg text-center text-[11px] leading-snug text-zinc-600 sm:text-xs">
           © {new Date().getFullYear()} Ahmed Ibrahimi Photography · Based in Algeria
         </span>
-        <a
-          href="https://www.instagram.com/yourfavtechnerd"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[11px] text-zinc-500 transition hover:text-zinc-300 sm:text-xs"
-        >
-          Developed by @yourfavtechnerd
-        </a>
+        <p className="text-[11px] text-zinc-500 sm:text-xs">
+          Developed by{' '}
+          <a
+            href="https://hamzaboukhari.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-zinc-300 underline underline-offset-2"
+          >
+            hamzaboukhari.site
+          </a>{' '}
+          ·{' '}
+          <a
+            href="https://www.instagram.com/yourfavtechnerd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-zinc-300 underline underline-offset-2"
+          >
+            @yourfavtechnerd
+          </a>
+        </p>
       </div>
     </footer>
   )

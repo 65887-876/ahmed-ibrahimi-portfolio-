@@ -115,14 +115,26 @@ export default function LinktreePage() {
           </div>
 
           <p className="mt-5 text-center text-xs text-zinc-500">© {new Date().getFullYear()} Ahmed Ibrahimi Photography</p>
-          <a
-            href="https://www.instagram.com/yourfavtechnerd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-1 block text-center text-xs text-zinc-400 transition hover:text-zinc-300"
-          >
-            Developed by @yourfavtechnerd
-          </a>
+          <p className="mt-1 text-center text-xs text-zinc-400">
+            Developed by{' '}
+            <a
+              href="https://hamzaboukhari.site"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-zinc-300 underline underline-offset-2"
+            >
+              hamzaboukhari.site
+            </a>{' '}
+            ·{' '}
+            <a
+              href="https://www.instagram.com/yourfavtechnerd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-zinc-300 underline underline-offset-2"
+            >
+              @yourfavtechnerd
+            </a>
+          </p>
         </div>
       </div>
     </section>
